@@ -1,0 +1,35 @@
+@media (max-width: 768px) {
+  /* Global */
+  .container {
+    width: 90%;
+  }
+
+  /* Header */
+  header {
+    font-size: 23px;
+  }
+
+  /* Posts */
+  #main-section .container .add-post,
+  #main-section .container .posts .post {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  #main-section .container .posts .post h3 {
+    font-size: 19px;
+    margin-bottom: 7px;
+  }
+  #main-section .container .posts .post p {
+    font-size: 15px;
+  }
+  /* Form */
+  #add-form form input,
+  #add-form form textarea {
+    font-size: 15px;
+  }
+
+  #add-form form button {
+    font-size: 15px;
+  }
+}

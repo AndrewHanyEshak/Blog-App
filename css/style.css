@@ -1,0 +1,116 @@
+/* Font Awesome */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--roboto-font);
+  color: #1d1d1d;
+  background-image: url("../images/bg.svg");
+}
+
+.container {
+  width: 85%;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-block: 10px;
+  font-family: "Pacifico", serif;
+  font-size: 30px;
+}
+
+/* Posts */
+#main-section .container {
+  margin: auto;
+}
+
+#main-section .container .add-post,
+#main-section .container .posts .post {
+  background-color: rgba(240, 240, 240, 0.9);
+  padding: 18px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#main-section .container .add-post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  cursor: pointer;
+}
+
+#main-section .container .add-post i {
+  color: #1d1d1dcc;
+}
+
+#main-section .container .posts .post h3 {
+  font-size: 24px;
+  margin-bottom: 7px;
+}
+
+/* Form */
+#add-form {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#add-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+}
+
+#add-form form input,
+#add-form form textarea {
+  background-color: whitesmoke;
+  color: #1d1d1d;
+  font-size: 16px;
+  font-family: var(--roboto-font);
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+}
+
+#add-form form textarea {
+  resize: vertical;
+}
+
+#add-form form input:focus,
+#add-form form textarea:focus {
+  border: none;
+  outline: none;
+}
+
+#add-form form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1d1d1d;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 20px;
+  font-family: var(--roboto-font);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+#add-form form button:hover {
+  background-color: #333;
+}

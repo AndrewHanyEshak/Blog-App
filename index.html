@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover and share amazing posts on a wide variety of topics. Stay updated with the latest trends, discussions, and ideas from around the world."
+    />
+    <title>Blog App</title>
+    <!-- Icon -->
+    <link
+      rel="shortcut icon"
+      href="./images/app-icon.png"
+      type="image/x-icon"
+    />
+    <!-- Font Awesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- MQ Link -->
+    <link rel="stylesheet" href="./css/mq.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Posts</h1>
+    </header>
+    <main>
+      <section id="main-section">
+        <div class="container">
+          <div class="add-post">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="posts"></div>
+        </div>
+      </section>
+
+      <section id="add-form">
+        <div class="container">
+          <form action="#">
+            <input type="text" id="title" placeholder="Enter post title" />
+            <textarea
+              id="body"
+              placeholder="Enter post body"
+              rows="5"
+            ></textarea>
+            <button type="button" id="add-button">Add</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
